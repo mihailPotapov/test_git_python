@@ -1,7 +1,11 @@
-print('привет мир. я пайтон')
-print('веди число и я запущу функию')
-x= int(input())
-print('число получено, начинаю вычисление...')
+x= int(input("ведите число"))
+b= input("ведите строку")
+print('число получено, начинаю постройку масива...')
 print('...')
-d=int((x*x*2+50)*32)
-print(d,'вот новое число!')
+masiv=[i for i in range(x)]
+print(masiv)
+print('генерация нового масива')
+for i in range(len(masiv)):
+    if masiv[i] % 2 == 0:
+        masiv[i] = b
+print(masiv,'новый масив!')
